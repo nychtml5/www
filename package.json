@@ -1,0 +1,52 @@
+{
+  "name": "nychtml5-www",
+  "private": true,
+  "license": "ISC",
+  "version": "0.0.1",
+  "description": "NYC HTML5 Website",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js lib test",
+    "test": "mocha -R spec --recursive test/",
+    "start": "NODE_ENV=production node .",
+    "dev": "NODE_ENV=development node .",
+    "stylus": "",
+    "browserify": "browserify client/main.js > public/js/main.js",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nychtml5/www.git"
+  },
+  "author": {
+    "name": "Trevor Landau",
+    "email": "landautrevor@gmail.com",
+    "url": "http://trevorlandau.net"
+  },
+  "homepage": "https://github.com/nychtml5/www",
+  "bugs": {
+    "url": "https://github.com/nychtml5/www/issues"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "envify": "~1.2.1",
+    "express": "^4.2.0",
+    "forever": "^0.11.1",
+    "jshint": "~2.5.1",
+    "jshint-stylish": "~0.2.0",
+    "lodash": "^2.4.1",
+    "react": "^0.10.0",
+    "supertest": "~0.12.1",
+    "twitter": "^0.2.9",
+    "stylus": "^0.45.1",
+    "react-classset": "0.0.1",
+    "react-page-middleware": "git://github.com/reactjs/react-page-middleware.git"
+  },
+  "devDependencies": {
+    "mocha": "^1.19.0",
+    "jshint-stylish": "^0.2.0",
+    "supertest": "^0.12.1",
+    "jshint": "^2.5.1",
+    "browserify": "^4.1.5"
+  }
+}
