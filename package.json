@@ -40,11 +40,11 @@
     "twitter": "^0.2.9",
     "stylus": "^0.45.1",
     "react-classset": "0.0.1",
-    "react-page-middleware": "git://github.com/reactjs/react-page-middleware.git",
     "connect": "^2.16.2",
     "is-predicate": "^0.7.2",
     "debug": "^0.8.1",
-    "fluxbox": "^1.1.0"
+    "fluxbox": "^1.1.0",
+    "express-react-views": "^0.2.0"
   },
   "devDependencies": {
     "mocha": "^1.19.0",
