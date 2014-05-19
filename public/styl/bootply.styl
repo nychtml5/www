@@ -1,0 +1,186 @@
+@import './colors.styl'
+
+// bootstrap helpers
+.navbar-form input, .form-inline input
+  width auto
+
+header
+  min-height 180px
+  margin-bottom 5px
+
+.affix
+  position static
+// end
+
+body
+  font-weight 300
+  color fcolor
+  background-color bg
+
+body
+  font-family 'Open Sans',Arial,Helvetica,Sans-Serif !important
+
+a,a:hover
+  color html5-niceblue
+  text-decoration none
+
+.highlight-bk
+  background-color #77CCDD
+  padding 1px
+  width 100%
+
+.highlight
+  color #77CCDD
+
+h3
+  &.highlight
+    padding-top 13px
+    padding-bottom 14px
+    border-bottom 2px solid #77CCDD
+
+.navbar
+  background-color html5-ltorange
+  color #ffffff
+  border-radius 0
+
+.navbar-nav
+  & > li
+    & > a
+      color #fff
+      padding-left 20px
+      padding-right 20px
+      border-left 1px solid #66BBCC
+    &:last-child
+      & > a
+        border-right 1px solid #66BBCC
+  li
+    a
+      &:hover
+        background-color #66BBCC
+
+.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus
+  color #000
+  opacity .9
+
+.navbar-brand
+  color #fff
+
+.accordion-group
+  border-width 0
+
+.dropdown-menu
+  min-width 250px
+
+.caret
+  color #fff
+
+.navbar-toggle
+  color #fff
+  border-width 0
+  &:hover
+    background-color #fff
+
+.panel,.panel-heading
+  border-radius 0
+  border-width 0
+  -webkit-box-shadow 0 3px 3px rgba(0, 0, 0, 0.09)
+  box-shadow 0 3px 3px  rgba(0, 0, 0, 0.09)
+
+.thumbnail
+  margin-bottom 8px
+  border-radius 0
+
+.well
+  border-radius 0
+
+.accordion-heading .accordion-toggle, .accordion-inner, .nav-stacked li > a
+  padding-left 1px
+
+.icon-2x
+  color #676767
+
+footer
+  height 50px
+  background-color #dfdfdf
+  color #888
+  margin-top 20px
+
+/* only apply sticky columns on wider screens */
+@media (min-width: 1200px)
+  #sidebar
+    margin-left:15px;
+
+  #content
+    padding-right:15px;
+
+  #sidebar
+    .affix-top
+      position: static;
+
+    &.affix
+      position: fixed !important;
+      top: 20px;
+      width:180px;
+
+  #midCol
+    .affix-top
+      position: static;
+
+    &.affix-bottom
+      padding-top:0;
+
+    &.affix
+      position:fixed !important;
+      top: 20px;
+      width:293px;
+
+@media (min-width: 992px)
+  .no-gutter.row
+    & > div[class*='col-md']
+      padding-left: 0;
+      padding-right: 0;
+
+    & > .col-md-12
+      width: 99.99999999999999%;
+      *width: 99.93055555555554%;
+
+    & .col-md-11
+      width: 91.66666666666666%;
+      *width: 91.59722222222221%;
+
+    & > .col-md-10
+      width: 83.33333333333331%;
+      *width: 83.26388888888887%;
+
+    & > .col-md-9
+      width: 74.99999999999999%;
+      *width: 74.93055555555554%;
+
+    & > .col-md-8
+      width: 66.66666666666666%;
+      *width: 66.59722222222221%;
+
+    & > .col-md-7
+      width: 58.33333333333333%;
+      *width: 58.263888888888886%;
+
+    & > .col-md-6
+      width: 49.99999999999999%;
+
+    & > .col-md-4
+      width: 33.33333333333333%;
+
+    & > .col-md-3
+      width: 24.999999999999996%;
+      *width: 24.930555555555554%;
+
+    & > .col-md-2
+      width: 16.666666666666664%;
+      *width: 16.59722222222222%;
+
+    & > .col-md-1
+      width: 8.333333333333332%;
+      *width: 8.263888888888888%;
+
+
+

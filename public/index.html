@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NYC HTML5</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Trevor Landau">
+    <meta name="description" content="Pomodoro timer written in clojurescript and om.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="/css/bootply.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+        
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+    <!-- common social tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:site_name" content="NYC HTML5">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="http://www.nychtml5.com/images/logo.png">
+    <meta name="twitter:site" content="@nychtml5">
+    <meta name="twitter:creator" content="@nychtml5">
+  </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+  <body>
+  <!-- Begin Navbar -->
+  <div class="navbar navbar-static">
+    <div class="container">
+      <div class="navbar-header">
+        <!--<a class="navbar-brand" href="http://www.bootply.com" target="ext"><b>NYC HTML5</b></a>-->
+        <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">  
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Channels</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Sub-link</a></li>
+            <li><a href="#">Sub-link</a></li>
+            <li><a href="#">Sub-link</a></li>
+            <li><a href="#">Sub-link</a></li>
+
+          </ul>
+          </li>
+        </ul>
+        <ul class="nav pull-right navbar-nav">
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /.navbar -->
+
+  <header class="masthead">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            <a href="/">NYC HTML5</a>
+          </h1>
+          <p class="lead">A JavaScript user group.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="pull-right">
+            <img class="brand" src="/images/logo.svg" alt="NYC HTML5">        
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Begin Body -->
+  <div class="container">
+    <div class="no-gutter row">
+      <!-- left side column -->
+      <div class="col-md-2">
+        <div class="panel panel-default" id="sidebar">
+          <div class="panel-heading" style="background-color:#888;color:#fff;">About</div> 
+          <div class="panel-body">
+            <h5>NYC HTML5 is a user group focused on JavaScript technologies.</h5>
+            <a role="button" class="btn btn-danger" href="http://http://www.meetup.com/nychtml5/">
+              Join Today!
+            </a>
+            <hr/>
+
+            <div class="">
+              irc: <strong>#nychtml5</strong>
+            </div>
+
+            <hr/>
+
+            <div class="col col-span-12">
+              <a href="https://twitter.com/nychtml5"><i class="icon-2x icon-twitter"></i></a>&nbsp;
+              <a href="https://github.com/nychtml5/www"><i class="icon-2x icon-github"></i></a>&nbsp;
+            </div>
+
+          </div><!--/panel body-->
+        </div><!--/panel-->
+      </div><!--/end left column-->
+
+      <!--mid column-->
+      <div class="col-md-3">
+        <div class="panel" id="midCol">
+          <div class="panel-heading" style="background-color:#555;color:#eee;">#nychtml5</div> 
+          <div class="panel-body">
+            <div class="media">
+
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://placedoge.net/50/50">
+              </a>
+
+              <div class="media-body">
+                <h5 class="media-heading"><a href="#"><strong>@trevor_landau</strong></a></h5>
+                <small>Totally wicked cool</small><br>
+              </div>
+            </div>
+
+          </div> 
+        </div><!--/panel-->
+      </div><!--/end mid column-->
+
+      <!-- right content column-->
+      <div class="col-md-7" id="content">
+        <div class="panel">
+          <div class="panel-heading" style="background-color:#111;color:#fff;">Timeline</div>   
+          <div class="panel-body">
+
+            <!-- NEWEST -->
+            <h3>Coming up...</h3>
+            <h4>Amorphic, D3 in Ember, and Preloading Multimedia: Can Play Through?</h4>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="well well-sm">
+                  <table>
+                    <tr>
+                      <td>Date:</td>
+                      <td>June 16th, 2014</td>
+                    </tr>
+                    <tr>
+                      <td>Location:</td>
+                      <td>4 Times Square</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-sm-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.284184248123!2d-73.9860064!3d40.755773899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25854d5ec1c43%3A0x2ca611edf127154b!2sConde+Nast+Bldg!5e0!3m2!1sen!2sus!4v1400436810661" width="395" height="250" frameborder="0" style="border:0"></iframe>
+              </div>
+            </div>
+
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://placedoge.net/100/100" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Exploring Chrome DevTools' less used potential Kirill Cherkashin</h4>
+                Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://placedoge.net/100/100" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Exploring Chrome DevTools' less used potential Kirill Cherkashin</h4>
+                Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
+              </div>
+            </div>
+
+            <!-- REST OF TALKS-->
+            <hr>
+            <h3>Previous meetings</h3>
+            <br>
+            <h4>Amorphic, D3 in Ember, and Preloading Multimedia: Can Play Through?</h4>
+            <h5><em>May 16th, 2014</em></h5>
+            <br>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://placedoge.net/100/100" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Exploring Chrome DevTools' less used potential Kirill Cherkashin</h4>
+                Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://placedoge.net/100/100" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Exploring Chrome DevTools' less used potential Kirill Cherkashin</h4>
+                Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
+              </div>
+            </div>
+          </div>
+
+          </div><!--/panel-body-->
+        </div><!--/panel-->
+        <!--/end right column-->
+      </div> <!-- end /content -->
+    </div>
+  </div>
+  <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+  <script type='text/javascript'>
+        
+    $(document).ready(function() {
+      $('#sidebar').affix({
+        offset: {
+          top: 230,
+          bottom: 100
+          }
+      });	
+
+      $('#midCol').affix({
+        offset: {
+          top: 230,
+          bottom: 100
+        }
+      });	
+    });
+  </script>
+  </body>
+</html>
