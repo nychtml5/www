@@ -12,9 +12,9 @@
 
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="/css/bootply.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
         
     <!--[if lt IE 9]>
@@ -35,10 +35,11 @@
     <!-- HTML code from Bootply.com editor -->
   <body>
   <!-- Begin Navbar -->
+  <!--
   <div class="navbar navbar-static">
     <div class="container">
       <div class="navbar-header">
-        <!--<a class="navbar-brand" href="http://www.bootply.com" target="ext"><b>NYC HTML5</b></a>-->
+        <a class="navbar-brand" href="http://www.bootply.com" target="ext"><b>NYC HTML5</b></a>
         <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
@@ -79,20 +80,85 @@
         </ul>
       </div>
     </div>
-  </div><!-- /.navbar -->
+  </div>
+  -->
 
   <header class="masthead">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h1>
-            <a href="/">NYC HTML5</a>
-          </h1>
-          <p class="lead">A JavaScript user group.</p>
+        <div class="col-md-2">
+          <img class="brand" src="/images/logo.svg" alt="NYC HTML5">        
         </div>
+        <div class="col-md-10">
+          <div class="page-header">
+            <h3 class="heading">{ Next Event }</h3>
+            <h2>
+              <a href="/">Amorphic, D3 in Ember, and Preloading Multimedia: Can Play Through?</a>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
         <div class="col-md-6">
-          <div class="pull-right">
-            <img class="brand" src="/images/logo.svg" alt="NYC HTML5">        
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" src="http://placedoge.net/100/100" alt="...">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Exploring Chrome DevTools' less used potential Kirill Cherkashin</h4>
+              Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
+            </div>
+          </div>
+
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" src="http://placedoge.net/100/100" alt="...">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Exploring Chrome DevTools' less used potential Kirill Cherkashin</h4>
+              Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
+            </div>
+          </div>
+
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" src="http://placedoge.net/100/100" alt="...">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Exploring Chrome DevTools' less used potential Kirill Cherkashin</h4>
+              Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6" id="logistics">
+          <h4 class="heading">{ Logistics }</h4>
+          <table>
+            <tr>
+              <td>Date:</td>
+              <td>June 16th, 2014</td>
+            </tr>
+            <tr>
+              <td>Location:</td>
+              <td>4 Times Square</td>
+            </tr>
+            <tr>
+              <td>Schedule:</td>
+              <td>
+                <p><strong>6:30 - 7:00 PM</strong> Pizza + discussion 5th Floor, Self Conference Room
+
+                <p><strong>7:00 - 8:15 PM</strong> Talks + questions 4th Floor Auditorium
+
+                <p><strong>8:15 PM</strong> - Drinks at Heartland Brewery
+            </td>
+            </tr>
+          </table>
+          <div class="well well-md">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.284184248123!2d-73.9860064!3d40.755773899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25854d5ec1c43%3A0x2ca611edf127154b!2sConde+Nast+Bldg!5e0!3m2!1sen!2sus!4v1400436810661" width="100%" height="260" frameborder="0" style="border:0"></iframe>
+          </div>
+          <div class="alert alert-warning">
+            NYC HTML5 expects all speakers and attendees to follow the <a href="http://jsconf.com/codeofconduct.html" class="alert-link">JSCONF</a> code of conduct.
           </div>
         </div>
       </div>
@@ -108,12 +174,23 @@
           <div class="panel-heading" style="background-color:#888;color:#fff;">About</div> 
           <div class="panel-body">
             <h5>NYC HTML5 is a user group focused on JavaScript technologies.</h5>
-            <a role="button" class="btn btn-danger" href="http://http://www.meetup.com/nychtml5/">
+            <a role="button" class="btn btn-danger" href="http://www.meetup.com/nychtml5/">
               Join Today!
             </a>
             <hr/>
 
-            <div class="">
+            <div>
+              Interested in speaking?
+              <a href="https://github.com/nychtml5/www/wiki/I-want-to-speak!">Open an issue</a>
+              or contact 
+              <a href="https://twitter.com/johnkpaul">John Paul</a>,
+              <a href="https://twitter.com/joe_sepi">JoeSepi</a>, or
+              <a href="https://twitter.com/trevor_landau">Trevor Landau</a>
+            </div>
+
+            <hr/>
+
+            <div>
               irc: <strong>#nychtml5</strong>
             </div>
 
@@ -154,54 +231,6 @@
         <div class="panel">
           <div class="panel-heading" style="background-color:#111;color:#fff;">Timeline</div>   
           <div class="panel-body">
-
-            <!-- NEWEST -->
-            <h3>Coming up...</h3>
-            <h4>Amorphic, D3 in Ember, and Preloading Multimedia: Can Play Through?</h4>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="well well-sm">
-                  <table>
-                    <tr>
-                      <td>Date:</td>
-                      <td>June 16th, 2014</td>
-                    </tr>
-                    <tr>
-                      <td>Location:</td>
-                      <td>4 Times Square</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-
-              <div class="col-sm-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.284184248123!2d-73.9860064!3d40.755773899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25854d5ec1c43%3A0x2ca611edf127154b!2sConde+Nast+Bldg!5e0!3m2!1sen!2sus!4v1400436810661" width="395" height="250" frameborder="0" style="border:0"></iframe>
-              </div>
-            </div>
-
-            <div class="media">
-              <a class="pull-left" href="#">
-                <img class="media-object" src="http://placedoge.net/100/100" alt="...">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">Exploring Chrome DevTools' less used potential Kirill Cherkashin</h4>
-                Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
-              </div>
-            </div>
-            <div class="media">
-              <a class="pull-left" href="#">
-                <img class="media-object" src="http://placedoge.net/100/100" alt="...">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">Exploring Chrome DevTools' less used potential Kirill Cherkashin</h4>
-                Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
-              </div>
-            </div>
-
-            <!-- REST OF TALKS-->
-            <hr>
-            <h3>Previous meetings</h3>
-            <br>
             <h4>Amorphic, D3 in Ember, and Preloading Multimedia: Can Play Through?</h4>
             <h5><em>May 16th, 2014</em></h5>
             <br>
@@ -232,25 +261,5 @@
     </div>
   </div>
   <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-
-  <script type='text/javascript'>
-        
-    $(document).ready(function() {
-      $('#sidebar').affix({
-        offset: {
-          top: 230,
-          bottom: 100
-          }
-      });	
-
-      $('#midCol').affix({
-        offset: {
-          top: 230,
-          bottom: 100
-        }
-      });	
-    });
-  </script>
   </body>
 </html>

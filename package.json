@@ -11,8 +11,8 @@
     "start": "NODE_ENV=production node .",
     "dev": "NODE_ENV=development node .",
     "stylus": "",
-    "browserify": "browserify client/main.js > public/js/main.js",
-    "build": ""
+    "browserify": "browserify public/js/app.js > public/js/bundle.js",
+    "build": "npm run browserify && npm run stylus"
   },
   "repository": {
     "type": "git",
@@ -44,7 +44,8 @@
     "is-predicate": "^0.7.2",
     "debug": "^0.8.1",
     "fluxbox": "^1.1.0",
-    "express-react-views": "^0.2.0"
+    "express-react-views": "^0.2.0",
+    "jquery": "^2.1.1"
   },
   "devDependencies": {
     "mocha": "^1.19.0",
