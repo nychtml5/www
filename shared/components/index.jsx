@@ -76,7 +76,7 @@ module.exports = createClass({
             </div>
 
             <div className="col-md-3">
-              <Twitter />
+              <Twitter tweets={this.props.tweets} />
             </div>
 
             <div className="col-md-7" id="content">
