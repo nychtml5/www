@@ -38,14 +38,36 @@ var Head = createClass({
   }
 });
 
+var NavBar = createClass({
+  render: function() {
+    return (
+      <div className="navbar navbar-static">
+        <div className="container">
+          <div className="navbar-header">
+            <a className="navbar-brand" href="http://www.bootply.com" target="ext"><b>NYC HTML5</b></a>
+            <a className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span className="glyphicon glyphicon-chevron-down"></span>
+            </a>
+          </div>
+          <div className="navbar-right navbar-collapse collapse">
+            <ul className="nav navbar-nav">  
+              <li><a href="http://www.meetup.com/nychtml5">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
+
 module.exports = createClass({
   render: function() {
     return (
       <html lang="en">
         <Head />
         <body>
+          <NavBar />
           <Header />
-
 
         <div className="container">
           <div className="no-gutter row">

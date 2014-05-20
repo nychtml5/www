@@ -31,7 +31,7 @@ var Logistics = createClass({
           </tr>
         </table>
         <div className="well well-md">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.284184248123!2d-73.9860064!3d40.755773899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25854d5ec1c43%3A0x2ca611edf127154b!2sConde+Nast+Bldg!5e0!3m2!1sen!2sus!4v1400436810661" width="100%" height="260" frameborder="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.284184248123!2d-73.9860064!3d40.755773899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25854d5ec1c43%3A0x2ca611edf127154b!2sConde+Nast+Bldg!5e0!3m2!1sen!2sus!4v1400436810661" width="100%" height="260" frameBorder="0"></iframe>
         </div>
         <div className="alert alert-warning">
           NYC HTML5 expects all speakers and attendees to follow the <a href="http://jsconf.com/codeofconduct.html" className="alert-link">JSCONF</a> code of conduct.
@@ -49,6 +49,7 @@ module.exports = createClass({
           <div className="row">
             <div className="col-md-2">
               <img className="brand" src="/images/logo.svg" alt="NYC HTML5"/>
+              <button className="btn btn-sm btn-danger">Sign up!</button>
             </div>
             <div className="col-md-10">
               <div className="page-header">
