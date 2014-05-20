@@ -19,12 +19,12 @@ var Head = createClass({
         <meta name="robots" content="index, follow"></meta>
 
         <link rel="shortcut icon" type="image/png" href="/images/favicon.png"></link>
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet"></link>
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet"></link>
+        <link href="/css/font-awesome.min.css" rel="stylesheet"></link>
         <link href="/css/bootply.css" rel="stylesheet"></link>
         <link href="/css/main.css" rel="stylesheet"></link>
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"></link>
-        <link rel="shortcut icon" type="image/png" href="/images/favicon.png"></link>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" rel="stylesheet"></link>
 
         <meta property="og:type" content="website"></meta>
         <meta property="og:image" content="/images/logo.png"></meta>
@@ -62,10 +62,9 @@ module.exports = createClass({
                   <div>
                     Interested in speaking?
                     <a href="https://github.com/nychtml5/www/wiki/I-want-to-speak!">Open an issue</a>
-                    or contact
-                    <a href="https://twitter.com/johnkpaul">John Paul</a>,
-                    <a href="https://twitter.com/joe_sepi">JoeSepi</a>, or
-                    <a href="https://twitter.com/trevor_landau">Trevor Landau</a>
+                    &nbsp;or contact <a href="https://twitter.com/johnkpaul">John Paul</a>,
+                    &nbsp;<a href="https://twitter.com/joe_sepi">JoeSepi</a>, or
+                    &nbsp;<a href="https://twitter.com/trevor_landau">Trevor Landau</a>
                   </div>
 
                   <hr/>
@@ -128,7 +127,6 @@ module.exports = createClass({
             </div>
           </div>
         </div>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         </body>
       </html>
     );

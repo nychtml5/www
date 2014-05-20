@@ -9,7 +9,7 @@ var Speaker = exports.Speaker = createClass({
     return (
       <div className="media">
         <a className="pull-left" href="#">
-          <img className="media-object" src="http://placedoge.net/100/100" alt="..."/>
+          <img className="media-object" src="/images/doge.png" alt="..."/>
         </a>
         <div className="media-body">
           <h4 className="media-heading">Exploring Chrome DevTools less used potential Kirill Cherkashin</h4>
