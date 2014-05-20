@@ -44,7 +44,7 @@
     "is-predicate": "^0.7.2",
     "debug": "^0.8.1",
     "fluxbox": "^1.1.0",
-    "express-react-views": "^0.2.0",
+    "express-react-views": "git://github.com/landau/express-react-views.git#master",
     "jquery": "^2.1.1"
   },
   "devDependencies": {
