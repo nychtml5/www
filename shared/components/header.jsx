@@ -49,7 +49,6 @@ module.exports = createClass({
           <div className="row">
             <div className="col-md-2">
               <img className="brand" src="/images/logo.svg" alt="NYC HTML5"/>
-              <button className="btn btn-sm btn-danger">Sign up!</button>
             </div>
             <div className="col-md-10">
               <div className="page-header">

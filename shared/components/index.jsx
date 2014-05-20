@@ -9,7 +9,7 @@ var Head = createClass({
   render: function() {
     return (
       <head>
-        <meta charset="utf-8"></meta>
+        <meta charSet="utf-8"></meta>
         <title>NYC HTML5</title>
         <meta name="generator" content="Bootply" ></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
@@ -45,9 +45,6 @@ var NavBar = createClass({
         <div className="container">
           <div className="navbar-header">
             <a className="navbar-brand" href="http://www.bootply.com" target="ext"><b>NYC HTML5</b></a>
-            <a className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span className="glyphicon glyphicon-chevron-down"></span>
-            </a>
           </div>
           <div className="navbar-right navbar-collapse collapse">
             <ul className="nav navbar-nav">  
