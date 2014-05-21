@@ -41,24 +41,24 @@ var Head = createClass({
   }
 });
 
-var NavBar = createClass({
-  render: function() {
-    return (
-      <div className="navbar navbar-static">
-        <div className="container">
-          <div className="navbar-header">
-            <a className="navbar-brand" href="http://www.bootply.com" target="ext">NYC HTML5</a>
-          </div>
-          <div className="navbar-right navbar-collapse collapse">
-            <ul className="nav navbar-nav">  
-              <li><a href="http://www.meetup.com/nychtml5">Sign Up</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    );
-  }
-});
+//var NavBar = createClass({
+//  render: function() {
+//    return (
+//      <div className="navbar navbar-static">
+//        <div className="container">
+//          <div className="navbar-header">
+//            <a className="navbar-brand" href="http://www.bootply.com" target="ext">NYC HTML5</a>
+//          </div>
+//          <div className="navbar-right navbar-collapse collapse">
+//            <ul className="nav navbar-nav">  
+//              <li><a href="http://www.meetup.com/nychtml5">Sign Up</a></li>
+//            </ul>
+//          </div>
+//        </div>
+//      </div>
+//    );
+//  }
+//});
 
 module.exports = createClass({
   render: function() {
@@ -66,7 +66,6 @@ module.exports = createClass({
       <html lang="en">
         <Head />
         <body>
-          <NavBar />
           <Header />
 
         <div className="container">
