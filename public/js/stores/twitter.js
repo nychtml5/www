@@ -1,7 +1,7 @@
 'use strict';
 
 var consts = require('../consts');
-var createStore = require('fluxbox').createStore;
+var createStore = require('fluxxor').createStore;
 
 var actions = {};
 actions[consts.TWITTER_UPDATE] = 'onUpdate';
