@@ -62,7 +62,7 @@ exports.Twitter = createClass({
       <div className="panel" id="midCol">
         <div className="panel-heading twitter-heading">#nychtml5</div>
         <div className="panel-body tweets">
-          {this.props.tweets.map(function(t) {
+          {this.props.tweets.slice(0, 10).map(function(t) {
             return <Tweet key={t.id} tweet={t} />
           })}
         </div>

@@ -36,7 +36,7 @@ var Logistics = createClass({
           <tr><td></td><td></td></tr>
           <tr>
             <td></td>
-            <td><a href="http://www.meetup.com/nychtml5/" className="btn btn-sm btn-danger">Sign Up!</a></td>
+            <td><a href="http://www.meetup.com/nychtml5/" className="btn btn-sm btn-danger">Sign up via Meetup.com</a></td>
           </tr>
         </table>
 
