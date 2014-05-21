@@ -4,15 +4,17 @@
 var React = require('react');
 var createClass = React.createClass;
 var SpeakerList = require('./speaker.jsx').SpeakerList;
+var moment = require('moment');
 
 var Meetup = exports.Meetup = createClass({
   render: function () {
     return (
       <div>
-        <h4>Amorphic, D3 in Ember, and Preloading Multimedia: Can Play Through?</h4>
-        <h5><em>May 16th, 2014</em></h5>
+        <h4>{this.props.meetup.title}</h4>
+        <h5>{moment(this.props.meetup.date).format('MMMM Do, YYYY')}</h5>
         <br/>
-        <SpeakerList />
+        <SpeakerList speakers={this.props.meetup.speakers} />
+        <hr/>
       </div>
     );
   }
@@ -25,9 +27,9 @@ exports.Timeline = createClass({
       <div className="panel">
         <div className="panel-heading timeline-heading">Timeline</div>
         <div className="panel-body">
-          <Meetup />
-          <hr />
-          <Meetup />
+          {this.props.meetups.map(function(m) {
+            return <Meetup meetup={m} />
+          })}
         </div>
       </div>
     );

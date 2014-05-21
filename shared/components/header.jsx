@@ -4,12 +4,12 @@
 var React = require('react');
 var createClass = React.createClass;
 var SpeakerList = require('./speaker').SpeakerList;
+var moment = require('moment');
 
 var Logistics = createClass({
   render: function() {
     return (
       <div className="col-md-6" id="logistics">
-
         <h4 className="heading">
           {"{ Logistics }"}
         </h4>
@@ -17,11 +17,11 @@ var Logistics = createClass({
         <table>
           <tr>
             <td>Date:</td>
-            <td>June 16th, 2014</td>
+            <td>{moment(this.props.date).format('MMMM Do, YYYY')}</td>
           </tr>
           <tr>
             <td>Location:</td>
-            <td>4 Times Square</td>
+            <td>4 Times Square (Entrance on 43rd, between 6th and Broadway)</td>
           </tr>
           <tr>
             <td>Schedule:</td>
@@ -31,7 +31,12 @@ var Logistics = createClass({
               <p><strong>7:00 - 8:15 PM</strong> Talks + questions 4th Floor Auditorium</p>
 
               <p><strong>8:15 PM</strong> - Drinks at Heartland Brewery</p>
-          </td>
+            </td>
+          </tr>
+          <tr><td></td><td></td></tr>
+          <tr>
+            <td></td>
+            <td><a href="http://www.meetup.com/nychtml5/" className="btn btn-sm btn-danger">Sign Up!</a></td>
           </tr>
         </table>
 
@@ -57,13 +62,13 @@ module.exports = createClass({
             </div>
             <div className="col-md-10">
               <div className="pull-right sponsored">
-                <small>Sponsored by:</small><br/>
+                <small className="pull-right">Sponsored by:</small><br/>
                 <img src="/images/cn-125.png" alt="conde nast" />
               </div>
               <div className="page-header">
                 <h3 className="heading">{"{ Next Event }"}</h3>
                 <h2>
-                  <a href="/">Amorphic, D3 in Ember, and Preloading Multimedia: Can Play Through?</a>
+                  <a href="/">{this.props.meetup.title}</a>
                 </h2>
               </div>
             </div>
@@ -72,8 +77,8 @@ module.exports = createClass({
           <hr/>
 
           <div className="row">
-            <SpeakerList className="col-md-6"/>
-            <Logistics />
+            <SpeakerList className="col-md-6" speakers={this.props.meetup.speakers}/>
+            <Logistics date={this.props.meetup.date} />
           </div>
         </div>
       </header>

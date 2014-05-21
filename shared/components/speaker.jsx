@@ -6,14 +6,26 @@ var createClass = React.createClass;
 
 var Speaker = exports.Speaker = createClass({
   render: function() {
+    var speaker = this.props.speaker;
+    var twitter = speaker.twitter;
+    var url = twitter ? 'https://twitter.com/' + twitter : speaker.url;
+
+    if (!url) url = '#';
+
     return (
-      <div className="media">
-        <a className="pull-left" href="#">
-          <img className="media-object" src="/images/doge.png" alt="..."/>
+      <div className="media speaker">
+        <a className="pull-left speaker-photo" href={url}>
+        {speaker.image ? <img className="media-object" src={'/images/speakers/' + speaker.image} 
+            alt={speaker.name} /> : <img style={{visibility: 'none'}} />}
         </a>
+
         <div className="media-body">
-          <h4 className="media-heading">Exploring Chrome DevTools less used potential Kirill Cherkashin</h4>
-          Often DevTools is used just for basic JavaScript debugging, but there is much more behind it than what is commonly used. In this talk we will go through an overview of some Chrome DevTools features, such as workspaces, snippets, shortcuts, extensions and several others. The goal is to showcase the less known and less used sides of Chrome DevTools so that we can make best use of what it can offer.
+          <h4 className="media-heading">
+            {speaker.title} 
+          </h4>
+          <a href={url}>{speaker.name}</a>
+          <br />
+          {speaker.desc}
         </div>
       </div>
     );
@@ -24,9 +36,9 @@ exports.SpeakerList = createClass({
   render: function() {
     return (
       <div className={this.props.className}>
-        <Speaker />
-        <Speaker />
-        <Speaker />
+        {(this.props.speakers || []).map(function(s) {
+          return <Speaker speaker={s} />
+        })}
       </div>
     );
   }

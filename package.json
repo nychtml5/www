@@ -47,7 +47,8 @@
     "express-react-views": "git://github.com/landau/express-react-views.git#master",
     "jquery": "^2.1.1",
     "moment": "^2.6.0",
-    "memory-cache": "0.0.5"
+    "memory-cache": "0.0.5",
+    "map-require": "0.0.5"
   },
   "devDependencies": {
     "mocha": "^1.19.0",

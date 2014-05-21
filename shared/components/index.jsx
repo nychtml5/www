@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
 'use strict';
 
+var _ = require('lodash');
 var React = require('react');
 var createClass = React.createClass;
 var Header = require('./header.jsx');
@@ -66,7 +67,7 @@ module.exports = createClass({
       <html lang="en">
         <Head />
         <body>
-          <Header />
+          <Header meetup={_.first(this.props.meetups)} />
 
         <div className="container">
           <div className="no-gutter row">
@@ -79,7 +80,7 @@ module.exports = createClass({
             </div>
 
             <div className="col-md-7" id="content">
-              <Timeline />
+              <Timeline meetups={_.rest(this.props.meetups)}/>
             </div>
           </div>
         </div>
