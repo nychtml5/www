@@ -11,25 +11,20 @@ var handleRgx = /(^|[^@\w])@(\w{1,15})\b/g;
 
 function parseText(text) {
   // Replace links
-  text = text.replace(linkRgx, function (text) {
+  return text.replace(linkRgx, function (text) {
     return '<a href=\'' + text + '\' target=\'_blank\'>' + text + '</a>';
-  });
-
+  })
   // Replace hash tags
-  text = text.replace(hashRgx, function (text) {
+  .replace(hashRgx, function (text) {
     var comp = encodeURIComponent(text);
     return '<a href=\'https://twitter.com/#!/search/?q=' + comp + '&src=hash\' target=\'_blank\'>' +
       text + '</a>';
-  });
-
+  })
   // Replace twitter handles
-  text = text.replace(handleRgx, function (text) {
+  .replace(handleRgx, function (text) {
     return '<a href=\'https://twitter.com/' + text.trim() + '\' target=\'_blank\'>' + text + '</a>';
   });
-
-  return text;
 }
-
 
 var Tweet = exports.Tweet = createClass({
   render: function () {
@@ -49,7 +44,7 @@ var Tweet = exports.Tweet = createClass({
               <strong>{user.screen_name}</strong>
             </a>
           </h5>
-          <small dangerouslySetInnerHTML={{ __html: parseText(tweet.text)}}></small>
+          <small dangerouslySetInnerHTML={{ __html: parseText(tweet.text) }}></small>
         </div>
       </div>
     );
@@ -70,4 +65,3 @@ exports.Twitter = createClass({
     );
   }
 });
-

@@ -37,7 +37,7 @@ exports.SpeakerList = createClass({
     return (
       <div className={this.props.className}>
         {(this.props.speakers || []).map(function(s) {
-          return <Speaker speaker={s} />
+          return <Speaker key={s.name} speaker={s} />
         })}
       </div>
     );

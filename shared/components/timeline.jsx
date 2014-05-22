@@ -28,7 +28,7 @@ exports.Timeline = createClass({
         <div className="panel-heading timeline-heading">Timeline</div>
         <div className="panel-body">
           {this.props.meetups.map(function(m) {
-            return <Meetup meetup={m} />
+            return <Meetup key={m.date} meetup={m} />
           })}
         </div>
       </div>

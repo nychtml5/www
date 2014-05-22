@@ -68,22 +68,31 @@ module.exports = createClass({
         <Head />
         <body>
           <Header meetup={_.first(this.props.meetups)} />
-
-        <div className="container">
-          <div className="no-gutter row">
-            <div className="col-md-2">
-              <About />
-            </div>
-
-            <div className="col-md-3">
-              <Twitter tweets={this.props.tweets} />
-            </div>
-
-            <div className="col-md-7" id="content">
-              <Timeline meetups={_.rest(this.props.meetups)}/>
+          <div className="container">
+            <div className="row">
+              <div className="well well-sm sponsored">
+                Space and Food provided by:
+                <br/>
+                <img src="/images/cn-125.png" alt="conde nast" />
+              </div>
             </div>
           </div>
-        </div>
+
+          <div className="container">
+            <div className="no-gutter row">
+              <div className="col-md-2">
+                <About />
+              </div>
+
+              <div className="col-md-3">
+                <Twitter tweets={this.props.tweets} />
+              </div>
+
+              <div className="col-md-7" id="content">
+                <Timeline meetups={_.rest(this.props.meetups)}/>
+              </div>
+            </div>
+          </div>
         </body>
       </html>
     );

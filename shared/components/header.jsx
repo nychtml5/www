@@ -61,10 +61,6 @@ module.exports = createClass({
               <img className="brand" src="/images/logo.svg" alt="NYC HTML5"/>
             </div>
             <div className="col-md-10">
-              <div className="pull-right sponsored">
-                <small className="pull-right">Sponsored by:</small><br/>
-                <img src="/images/cn-125.png" alt="conde nast" />
-              </div>
               <div className="page-header">
                 <h3 className="heading">{"{ Next Event }"}</h3>
                 <h2>
