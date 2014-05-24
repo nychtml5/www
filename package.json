@@ -11,7 +11,7 @@
     "start": "NODE_ENV=production node .",
     "dev": "NODE_ENV=development node .",
     "stylus": "stylus public/styl --out public/css/compiled",
-    "joincss": "cat public/css/compiled/*.css > public/css/compiled/compiled.css",
+    "joincss": "cat public/css/{vendor,compiled}/*.css > public/css/compiled/compiled.css",
     "csso": "csso public/css/compiled/compiled.css > public/css/main.min.css",
     "buildcss": "rm -rf public/css/compiled && mkdir -p public/css/compiled && npm run stylus && npm run joincss && npm run csso",
     "browserify": "browserify public/js/app.js > public/js/bundle.js",

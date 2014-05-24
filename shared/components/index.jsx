@@ -9,8 +9,25 @@ var About = require('./about.jsx');
 var Twitter = require('./twitter.jsx').Twitter;
 var Timeline = require('./timeline.jsx').Timeline;
 
+
 var Head = createClass({
   render: function() {
+
+    var dev = [
+      '/vendor/bootstrap.min.css',
+      '/vendor/font-awesome.min.css',
+      '/bootply.css',
+      '/main.css'
+    ];
+
+    var prod = ['/main.min.css'];
+    var css = _.isEqual(this.props.env, 'production') ? prod : dev;
+
+    // just css link actually
+    function toLink(src) {
+      return <link href={'/css' + src} rel="stylesheet" />;
+    }
+
     return (
       <head>
         <meta charSet="utf-8"></meta>
@@ -24,10 +41,7 @@ var Head = createClass({
 
         <link rel="shortcut icon" type="image/png" href="/images/favicon.png"></link>
 
-        <link href="/css/bootstrap.min.css" rel="stylesheet"></link>
-        <link href="/css/font-awesome.min.css" rel="stylesheet"></link>
-        <link href="/css/bootply.css" rel="stylesheet"></link>
-        <link href="/css/main.css" rel="stylesheet"></link>
+        {css.map(toLink)}
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"></link>
 
         <meta property="og:type" content="website"></meta>
@@ -68,9 +82,10 @@ module.exports = createClass({
       "m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)" +
       "})(window,document,'script','//www.google-analytics.com/analytics.js','ga');" +
       "ga('create', 'UA-36148349-3', 'nychtml5.com');ga('send', 'pageview');"
+
     return (
       <html lang="en">
-        <Head />
+        <Head env={this.props.env} />
         <body>
           <Header meetup={_.first(this.props.meetups)} />
           <div className="container">

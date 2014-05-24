@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# Author
+  Trevor Lnadau | @trevor_landau
+
+# Contributors
+  COULD BE YOU! :D
+
+# Site
+  nychtml5.com
+
+# NYC HTML5 TEAM
+  JoeSepi | @joe_sepi
+  John K. Paul | @johnkpaul
+
+# TECHNOLOGY COLOPHON
+  Node, Nginx, Express, Lodash, React, Stylus, Bootstrap
