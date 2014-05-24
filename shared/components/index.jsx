@@ -63,6 +63,11 @@ var Head = createClass({
 
 module.exports = createClass({
   render: function() {
+    var goog = "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){" +
+      "(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),"+
+      "m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)" +
+      "})(window,document,'script','//www.google-analytics.com/analytics.js','ga');" +
+      "ga('create', 'UA-36148349-3', 'nychtml5.com');ga('send', 'pageview');"
     return (
       <html lang="en">
         <Head />
@@ -93,14 +98,10 @@ module.exports = createClass({
               </div>
             </div>
           </div>
+          <script dangerouslySetInnerHTML={{ __html: goog}}>
+          </script>
         </body>
       </html>
     );
   }
 });
-        //<script>{(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        //        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        //        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        //        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        //        ga('create', 'UA-36148349-3', 'nychtml5.com');ga('send', 'pageview');}
-        //</script>
