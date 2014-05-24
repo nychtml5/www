@@ -64,7 +64,7 @@ module.exports = createClass({
               <div className="page-header">
                 <h3 className="heading">{"{ Next Event }"}</h3>
                 <h2>
-                  <a href="/">{this.props.meetup.title}</a>
+                  <a href={this.props.meetup.url}>{this.props.meetup.title}</a>
                 </h2>
               </div>
             </div>

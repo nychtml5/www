@@ -2,6 +2,7 @@
 
 exports.title = 'Exploring Chrome DevTools\' less used potential, Custom ESLint Rules, & Streams in a Browser';
 exports.date = new Date(2014, 4, 14, 18, 30);
+exports.url = 'http://www.meetup.com/nychtml5/events/177554272/';
 exports.speakers = [
   {
     title: 'Exploring Chrome DevTools\' less used potential',

@@ -9,14 +9,14 @@ var Speaker = exports.Speaker = createClass({
     var speaker = this.props.speaker;
     var twitter = speaker.twitter;
     var url = twitter ? 'https://twitter.com/' + twitter : speaker.url;
+    var img = speaker.image ? '/images/speakers/' + speaker.image : 'http://placekitten.com/150/150';
 
     if (!url) url = '#';
 
     return (
       <div className="media speaker">
         <a className="pull-left speaker-photo" href={url}>
-        {speaker.image ? <img className="media-object" src={'/images/speakers/' + speaker.image} 
-            alt={speaker.name} /> : <img style={{visibility: 'none'}} />}
+        <img className="media-object" src={img} alt={speaker.name} />
         </a>
 
         <div className="media-body">

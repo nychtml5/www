@@ -8,12 +8,12 @@ var moment = require('moment');
 
 var Meetup = exports.Meetup = createClass({
   render: function () {
+    var m = this.props.meetup;
     return (
       <div>
-        <h4>{this.props.meetup.title}</h4>
-        <h5>{moment(this.props.meetup.date).format('MMMM Do, YYYY')}</h5>
-        <br/>
-        <SpeakerList speakers={this.props.meetup.speakers} />
+        <h4><a href={m.url}>{m.title}</a></h4>
+        <h5>{moment(m.date).format('MMMM Do, YYYY')}</h5>
+        <SpeakerList speakers={m.speakers} />
         <hr/>
       </div>
     );

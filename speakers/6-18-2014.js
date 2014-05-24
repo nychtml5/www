@@ -2,6 +2,7 @@
 
 exports.title = 'Amorphic, D3 in Ember, and Preloading Multimedia: Can Play Through?';
 exports.date = new Date(2014, 5, 18, 18, 30);
+exports.url = 'http://www.meetup.com/nychtml5/events/183102422/';
 exports.speakers = [
   {
     title: 'Amorphic',
