@@ -9,13 +9,11 @@ var About = require('./about.jsx');
 var Twitter = require('./twitter.jsx').Twitter;
 var Timeline = require('./timeline.jsx').Timeline;
 
-
 var Head = createClass({
   render: function() {
 
     var dev = [
       '/vendor/bootstrap.min.css',
-      '/vendor/font-awesome.min.css',
       '/bootply.css',
       '/main.css'
     ];
@@ -41,6 +39,7 @@ var Head = createClass({
 
         <link rel="shortcut icon" type="image/png" href="/images/favicon.png"></link>
 
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></link>
         {css.map(toLink)}
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"></link>
 
