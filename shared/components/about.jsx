@@ -33,8 +33,8 @@ module.exports = createClass({
           <hr/>
 
           <div className="col col-span-12">
-            <a href="https://twitter.com/nychtml5"><i className="icon-2x icon-twitter"></i></a>&nbsp;
-            <a href="https://github.com/nychtml5/www"><i className="icon-2x icon-github"></i></a>&nbsp;
+            <a href="https://twitter.com/nychtml5"><i className="fa fa-2x fa-twitter-square"></i></a>&nbsp;
+            <a href="https://github.com/nychtml5/www"><i className="fa fa-2x fa-github-square"></i></a>&nbsp;
           </div>
 
         </div>
