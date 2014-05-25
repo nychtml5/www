@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nychtml5/www.svg)](https://travis-ci.org/nychtml5/www)
+
 # [NYC HTML5 Website](http://www.nychtml5.com)
 
 Do you have a good idea for the website? Anyone can contribute and is encouraged!
