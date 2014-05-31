@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
 'use strict';
 
+var is = require('is-predicate');
 var _ = require('lodash');
 var React = require('react');
 var createClass = React.createClass;
@@ -28,7 +29,7 @@ var Head = createClass({
 
     return (
       <head>
-        <meta charSet="utf-8"></meta>
+        <meta charSet="utf-8"/>
         <title>NYC HTML5</title>
         <meta name="generator" content="Bootply" ></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
@@ -82,11 +83,13 @@ module.exports = createClass({
       "})(window,document,'script','//www.google-analytics.com/analytics.js','ga');" +
       "ga('create', 'UA-36148349-3', 'nychtml5.com');ga('send', 'pageview');"
 
+    var upcoming = this.props.meetups.findNext(new Date());
+
     return (
       <html lang="en">
         <Head env={this.props.env} />
         <body>
-          <Header meetup={_.first(this.props.meetups)} />
+          <Header meetup={upcoming} />
           <div className="container">
             <div className="row">
               <div className="well well-sm sponsored">
@@ -108,11 +111,11 @@ module.exports = createClass({
               </div>
 
               <div className="col-md-7" id="content">
-                <Timeline meetups={_.rest(this.props.meetups)}/>
+                <Timeline meetups={_.without(this.props.meetups, upcoming)}/>
               </div>
             </div>
           </div>
-          <script dangerouslySetInnerHTML={{ __html: goog}}>
+          <script dangerouslySetInnerHTML={{ __html: goog }}>
           </script>
         </body>
       </html>
