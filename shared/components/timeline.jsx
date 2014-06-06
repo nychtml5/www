@@ -20,12 +20,12 @@ var Meetup = exports.Meetup = createClass({
 
     return (
       <li className={cls}>
-        <div className='timeline-badge'><i className='glyphicon glyphicon-calendar'></i></div>
+        <div className='timeline-badge'><i className='fa fa-calendar'></i></div>
         <div className='timeline-panel'>
           <div className='timeline-heading'>
             <h4 className='timeline-title'><a href={m.url}>{m.title}</a></h4>
             <p className='timeline-date'>
-              <i className='glyphicon glyphicon-time'/> {moment(m.date).format('MMM Do, YYYY')}
+              <i className='fa fa-clock-o'/> {moment(m.date).format('MMM Do, YYYY')}
             </p>
           </div>
           <div className='timeline-body'>
