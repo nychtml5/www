@@ -6,7 +6,6 @@ var _ = require('lodash');
 var React = require('react');
 var createClass = React.createClass;
 var Header = require('./header.jsx');
-var About = require('./about.jsx');
 var Twitter = require('./twitter.jsx').Twitter;
 var Timeline = require('./timeline.jsx').Timeline;
 
@@ -89,10 +88,17 @@ module.exports = createClass({
       <html lang="en">
         <Head env={this.props.env} />
         <body>
+          <div className='container' id="social">
+            <div className='pull-right'>
+              <a href='https://twitter.com/nychtml5'><i className='fa fa-2x fa-twitter-square'></i></a>&nbsp;
+              <a href='https://github.com/nychtml5/www'><i className='fa fa-2x fa-github-square'></i></a>&nbsp;
+              irc: <strong>#nychtml5</strong>
+            </div>
+          </div>
           <Header meetup={upcoming} />
           <div className="container">
             <div className="row">
-              <div className="well well-sm sponsored">
+              <div className="well-sm sponsored">
                 Space and Food provided by:
                 <br/>
                 <img src="/images/cn-125.png" alt="conde nast" />
@@ -102,15 +108,7 @@ module.exports = createClass({
 
           <div className="container">
             <div className="no-gutter row">
-              <div className="col-md-2">
-                <About />
-              </div>
-
-              <div className="col-md-3">
-                <Twitter tweets={this.props.tweets} />
-              </div>
-
-              <div className="col-md-7" id="content">
+              <div className="col-md-12" id="content">
                 <Timeline meetups={_.without(this.props.meetups, upcoming)}/>
               </div>
             </div>
