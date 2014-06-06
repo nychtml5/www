@@ -92,7 +92,7 @@ module.exports = createClass({
             <div className='pull-right'>
               <a href='https://twitter.com/nychtml5'><i className='fa fa-2x fa-twitter-square'></i></a>&nbsp;
               <a href='https://github.com/nychtml5/www'><i className='fa fa-2x fa-github-square'></i></a>&nbsp;
-              irc: <strong>#nychtml5</strong>
+              <a href="irc://irc.freenode.net/#nychtml5">irc: <strong>#nychtml5</strong></a>
             </div>
           </div>
           <Header meetup={upcoming} />
