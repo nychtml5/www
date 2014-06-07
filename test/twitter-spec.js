@@ -1,13 +1,13 @@
 'use strict';
 
 var chai = require('chai');
-var should = chai.should();
+//var should = chai.should();
 chai.use(require('sinon-chai'));
-var sinon = require('sinon');
+//var sinon = require('sinon');
 
 // TODO unformatted tweets for getTweets/getMentions
-var formattedTweets = require('./fixtures/tweets-formatted');
-var twitter = require('../lib/twitter');
+//var formattedTweets = require('./fixtures/tweets-formatted');
+//var twitter = require('../lib/twitter');
 
 describe('twitter', function() {
   describe('#getTweets', function() {

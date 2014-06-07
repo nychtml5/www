@@ -6,7 +6,7 @@
   "description": "NYC HTML5 Website",
   "main": "index.js",
   "scripts": {
-    "pretest": "#jshint --reporter node_modules/jshint-stylish/stylish.js index.js lib test",
+    "pretest": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js lib test",
     "test": "mocha -R spec --recursive test/",
     "start": "NODE_ENV=production node .",
     "dev": "NODE_ENV=development node .",

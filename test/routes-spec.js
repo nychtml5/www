@@ -6,7 +6,6 @@ var path = require('path');
 var request = require('supertest');
 var callbackWith = require('callback-with');
 var chai = require('chai');
-var should = chai.should();
 chai.use(require('sinon-chai'));
 var sinon = require('sinon');
 
@@ -19,7 +18,7 @@ var app = express();
 
 app.set('views', path.join(__dirname, '..', 'shared', 'components'));
 app.set('view engine', 'jsx');
-app.engine('jsx', require('express-react-views').createEngine({ static: false }));
+app.engine('jsx', require('express-react-views').createEngine({}));
 
 initRoutes(app);
 
@@ -38,13 +37,6 @@ describe('GET /', function() {
 
   it('should respond with 200', function(done) {
     request(app).get('/').expect(200, done);
-  });
-
-  it('should call twitter', function(done) {
-    request(app).get('/').end(function() {
-      this.tweetStub.should.be.calledOnce;
-      done();
-    }.bind(this));
   });
 });
 
