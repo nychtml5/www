@@ -22,8 +22,8 @@ var Head = createClass({
     var css = _.isEqual(this.props.env, 'production') ? prod : dev;
 
     // just css link actually
-    function toLink(src) {
-      return <link href={'/css' + src} rel="stylesheet" />;
+    function toLink(src, ndx) {
+      return <link href={'/css' + src} rel="stylesheet" key={ndx} />;
     }
 
     return (
