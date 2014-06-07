@@ -2,7 +2,7 @@
   "name": "nychtml5-www",
   "private": true,
   "license": "ISC",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NYC HTML5 Website",
   "main": "index.js",
   "scripts": {
