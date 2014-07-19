@@ -53,6 +53,7 @@ var Logistics = createClass({
 
 module.exports = createClass({
   render: function () {
+    if (!this.props.meetup) return (<span/>);
     return (
       <header className="masthead">
         <div className="container">
