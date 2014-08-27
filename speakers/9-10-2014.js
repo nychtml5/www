@@ -2,7 +2,7 @@
 
 exports.title = 'Problematic Chromatics, PEG.js and Bitcoin.js';
 exports.date = new Date(2014, 8, 10, 10, 30);
-exports.url = 'http://www.meetup.com/nychtml5/events/195356672/';
+exports.url = 'http://www.meetup.com/nychtml5/events/202186082/';
 exports.speakers = [
   {
     title: 'Problematic Chromatics: Making colorblind accessible webpages',
