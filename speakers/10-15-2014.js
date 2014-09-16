@@ -1,8 +1,8 @@
 'use strict';
 
-exports.title = 'Problematic Chromatics, PEG.js and Bitcoin.js';
+exports.title = 'Everybody likes Brisket, r.js a love story, Google Closure';
 exports.date = new Date(2014, 9, 15, 10, 30);
-exports.url = 'http://www.meetup.com/nychtml5/events/202186082/';
+exports.url = 'http://www.meetup.com/nychtml5/events/206495162/';
 exports.speakers = [
   {
     title: 'Everybody likes Brisket',

@@ -2,7 +2,7 @@
   "name": "nychtml5-www",
   "private": true,
   "license": "ISC",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "NYC HTML5 Website",
   "main": "index.js",
   "scripts": {
@@ -41,7 +41,7 @@
     "express-react-views": "^0.2.0",
     "fluxxor": "^1.1.1",
     "forever": "^0.11.1",
-    "is-predicate": "^0.7.2",
+    "is-predicate": "~0.10.1",
     "jquery": "^2.1.1",
     "lodash": "^2.4.1",
     "map-require": "0.0.5",
